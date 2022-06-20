@@ -1,5 +1,7 @@
 import React from "react";
 import Work from "./work";
+import { Git, GitI, Tailwindcss, Gitt, JSI, ReactI, TP } from "./icons";
+
 const Works = () => {
   return (
     <div id="works" className="works_container">
@@ -14,6 +16,7 @@ const Works = () => {
             "Building a responsive E-Sotre web application with the use of : JavaScript, ReactJs, Taillwinds"
           }
           link={"https://github.com/JugurthaMoad/e_store"}
+          tech={"JS"}
         />
         <Work
           title="A copy of Promofocus site"
@@ -21,6 +24,7 @@ const Works = () => {
             "Building a responsive copy of Promofocus web site and adding a new feature with the use of : TypeScript, ReactJs, Css"
           }
           link={"https://github.com/JugurthaMoad/PromodoFocus"}
+          tech={"TS"}
         />
         <Work
           title="E-Store web application with ReactJS"
@@ -28,6 +32,7 @@ const Works = () => {
             "Building a responsive E-Sotre web application with the use of : JavaScript, ReactJs, Taillwinds"
           }
           link={"https://github.com/JugurthaMoad/e_store"}
+          tech={"JS"}
         />
         <Work
           title="E-Store web application with ReactJS"
@@ -35,6 +40,7 @@ const Works = () => {
             "Building a responsive E-Sotre web application with the use of : JavaScript, ReactJs, Taillwinds"
           }
           link={"https://github.com/JugurthaMoad/e_store"}
+          tech={"JS"}
         />
       </div>
     </div>

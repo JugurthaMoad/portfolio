@@ -73,16 +73,37 @@ const About = () => {
               </div>
               <div className="stack_content">
                 <div className={front ? "stack_description" : "hide"}>
-                  Description front
+                  Currently, I'm using:
+                  <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>TypeScript</li>
+                    <li>ReactJs</li>
+                    <li>Tailwindcss</li>
+                  </ul>
                 </div>
                 <div className={api ? "stack_description" : "hide"}>
-                  Description API
+                  Currently, I'm using:
+                  <ul>
+                    <li>A REST API with the help of axios</li>
+                  </ul>
                 </div>
                 <div className={back ? "stack_description" : "hide"}>
-                  Description Back
+                  Currently, I'm using:
+                  <ul>
+                    <li>NodeJs</li>
+                    <li>ExpressJs</li>
+                    <li>MongoDB</li>
+                  </ul>
                 </div>
                 <div className={others ? "stack_description" : "hide"}>
-                  Description Others
+                  I'm also usign:
+                  <ul>
+                    <li>Git/Github</li>
+                    <li>Linux</li>
+                    <li>Figma</li>
+                  </ul>
                 </div>
               </div>
             </div>
