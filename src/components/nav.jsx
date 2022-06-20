@@ -1,8 +1,14 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Logo, Menu, Close } from "./icons";
+
+import ToPdf from "./toPdf";
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);
+  const hundlePdfClick = () => {
+    console.log("show pdf");
+    ToPdf();
+  };
   const displayMenu = () => {
     setShowMenu(!showMenu);
   };
@@ -39,7 +45,9 @@ const Nav = () => {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        <div className="resume_btn">Resume</div>
+        <div onClick={hundlePdfClick} className="resume_btn">
+          Resume
+        </div>
       </div>
       <div className="nav_content_mobile">
         <Menu onClick={displayMenu} />
@@ -60,7 +68,9 @@ const Nav = () => {
                 <a href="#contact">Contact</a>
               </li>
             </ul>
-            <div className="resume_btn">Resume</div>
+            <div onClick={hundlePdfClick} className="resume_btn">
+              Resume
+            </div>
           </div>
         </div>
         <div className={showMenu ? "menu_bg" : "hide"}></div>

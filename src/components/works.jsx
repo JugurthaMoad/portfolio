@@ -1,7 +1,5 @@
 import React from "react";
 import Work from "./work";
-import { Git, GitI, Tailwindcss, Gitt, JSI, ReactI, TP } from "./icons";
-
 const Works = () => {
   return (
     <div id="works" className="works_container">

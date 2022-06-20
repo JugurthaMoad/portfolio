@@ -1,5 +1,5 @@
 import React from "react";
-import { Folder, Git, GitI, Tailwindcss, Gitt, JSI, ReactI, TP } from "./icons";
+import { Folder, GitI, Tailwindcss, Gitt, JSI, ReactI, TP } from "./icons";
 const Work = ({ title, description, link, tech }) => {
   return (
     <div className="work_container">
