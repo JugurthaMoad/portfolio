@@ -1,13 +1,13 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Logo, Menu, Close } from "./icons";
-
-import ToPdf from "./toPdf";
+import { saveAs } from "file-saver";
+import pdf from "../../src/Document/MoadJugurthaCv.pdf";
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);
   const hundlePdfClick = () => {
     console.log("show pdf");
-    ToPdf();
+    saveAs(pdf, "JugurthaMoad.pdf");
   };
   const displayMenu = () => {
     setShowMenu(!showMenu);
