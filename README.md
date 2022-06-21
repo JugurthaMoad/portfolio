@@ -1,1 +1,1 @@
-<a href="https://jugurthamoad.github.io/portfolio/">Online version</a>
+<a href="https://jugurthamoad.github.io/portfolio/" target="blank">Online version</a>
