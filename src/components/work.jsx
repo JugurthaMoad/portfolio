@@ -1,6 +1,15 @@
 import React from "react";
-import { Folder, GitI, Tailwindcss, Gitt, JSI, ReactI, TP } from "./icons";
-const Work = ({ title, description, link, tech }) => {
+import {
+  Folder,
+  GitI,
+  Tailwindcss,
+  Gitt,
+  JSI,
+  ReactI,
+  TP,
+  Css3,
+} from "./icons";
+const Work = ({ title, description, link, tech, st }) => {
   return (
     <div className="work_container">
       <a className="work_container" href={link} target="blank" rel="noreferrer">
@@ -15,7 +24,7 @@ const Work = ({ title, description, link, tech }) => {
             <Gitt />
             {tech === "JS" ? <JSI /> : <TP />}
             <ReactI />
-            <Tailwindcss />
+            {st === "CSS" ? <Css3 /> : <Tailwindcss />}
           </span>
         </div>
       </a>

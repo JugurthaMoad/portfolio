@@ -16,10 +16,6 @@
   cursor: pointer;
 }
 
-.hh {
-  width: 100vw;
-  color: red;
-}
 /* portfolio component */
 .global_container {
   width: 100%;
@@ -584,6 +580,7 @@
   font-size: 1.1rem;
   line-height: 1.8rem;
   max-width: 500px;
+  overflow: hidden;
 }
 
 .work_tech {

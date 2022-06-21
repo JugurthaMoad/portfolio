@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Logo, Menu, Close } from "./icons";
 import { saveAs } from "file-saver";
-import pdf from "../../src/Document/MoadJugurthaCv.pdf";
+import pdf from "../../src/Document/MoadJugurtha.pdf";
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);

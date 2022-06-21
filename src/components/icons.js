@@ -222,9 +222,10 @@ export const Up = ({ ...props }) => {
   );
 };
 
-export const Folder = () => {
+export const Folder = ({ ...props }) => {
   return (
     <svg
+      {...props}
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
       role="img"
@@ -244,9 +245,10 @@ export const Folder = () => {
   );
 };
 
-export const ReactI = () => {
+export const ReactI = ({ ...props }) => {
   return (
     <svg
+      {...props}
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
       role="img"
@@ -263,9 +265,10 @@ export const ReactI = () => {
   );
 };
 
-export const JSI = () => {
+export const JSI = ({ ...props }) => {
   return (
     <svg
+      {...props}
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
       role="img"
@@ -282,9 +285,10 @@ export const JSI = () => {
   );
 };
 
-export const Gitt = () => {
+export const Gitt = ({ ...props }) => {
   return (
     <svg
+      {...props}
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
       role="img"
@@ -338,9 +342,10 @@ export const Gitt = () => {
   );
 };
 
-export const Tailwindcss = () => {
+export const Tailwindcss = ({ ...props }) => {
   return (
     <svg
+      {...props}
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
       role="img"
@@ -364,14 +369,34 @@ export const TP = ({ ...props }) => {
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
       role="img"
-      width="1.8em"
-      height="1.8em"
+      width="1.7em"
+      height="1.7em"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 512 512"
     >
       <path
         fill="#8892b0"
         d="M357.333 402c-16.933-1.555-38.666-4.833-59.67-27.772v47.19c38.587 25.082 104.951 20.478 128.087-9.668c13.75-17.917 19.417-41.917 9.237-69.099C411 294.333 354 291.333 337.424 260.822c-18.313-49.418 57.212-58.347 93.498-25.054v-44.36c-15.46-9.985-40.044-11.058-57.29-10.126c-45.511 2.457-76.094 28.901-75.638 68.293c-1.96 54.987 60.83 69.145 92.359 94.592c21.413 18.17 19.88 62.235-33.02 57.833zm-179.691 31.514V220.025h-68.778v-35.303h175.655v35.303h-68.921v213.489h-37.956zM480 32v448H32V32h448zm32-32H0v512h512V0z"
+      />
+    </svg>
+  );
+};
+
+export const Css3 = ({ ...props }) => {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      role="img"
+      width="1.8em"
+      height="1.8em"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 15 15"
+    >
+      <path
+        fill="#8892b0"
+        d="M.5.5V0a.5.5 0 0 0-.498.542L.5.5Zm14 0l.498.042A.5.5 0 0 0 14.5 0v.5Zm-1 12l.158.474a.5.5 0 0 0 .34-.433L13.5 12.5Zm-6 2l-.158.474a.499.499 0 0 0 .316 0L7.5 14.5Zm-6-2l-.498.041a.5.5 0 0 0 .34.433L1.5 12.5Zm9-9h.5V3h-.5v.5Zm0 6l.158.474L11 9.86V9.5h-.5Zm-3 1l-.158.474l.158.053l.158-.053L7.5 10.5Zm-3-1H4v.36l.342.114L4.5 9.5ZM.5 1h14V0H.5v1ZM14.002.458l-1 12l.996.083l1-12l-.996-.083Zm-.66 11.568l-6 2l.316.948l6-2l-.316-.948Zm-5.684 2l-6-2l-.316.948l6 2l.316-.948Zm-5.66-1.567l-1-12l-.996.083l1 12l.996-.083ZM10.5 3H4v1h6.5V3ZM6 7h4.5V6H6v1Zm4-.5v3h1v-3h-1Zm.342 2.526l-3 1l.316.948l3-1l-.316-.948Zm-2.684 1l-3-1l-.316.948l3 1l.316-.948ZM5 9.5V8H4v1.5h1Zm5-6v3h1v-3h-1Z"
       />
     </svg>
   );

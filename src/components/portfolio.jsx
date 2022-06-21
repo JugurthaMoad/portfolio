@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ScrollAnimation from "./scrollAnimation";
 import { Up } from "./icons";
 import Nav from "./nav";
 import Description from "./descripton";

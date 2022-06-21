@@ -19,26 +19,30 @@ const Works = () => {
         <Work
           title="A copy of Promofocus site"
           description={
-            "Building a responsive copy of Promofocus web site and adding a new feature with the use of : TypeScript, ReactJs, Css"
+            "Building a responsive copy of Promofocus web site and adding a new feature with the use of : TypeScript, ReactJs, Css3"
           }
           link={"https://github.com/JugurthaMoad/PromodoFocus"}
           tech={"TS"}
+          st={"CSS"}
         />
+
         <Work
-          title="E-Store web application with ReactJS"
+          title="My Portfolio"
           description={
-            "Building a responsive E-Sotre web application with the use of : JavaScript, ReactJs, Taillwinds"
+            "Building a responsive Portfolio with the use of : JavaScript, ReactJs, Css3"
           }
           link={"https://github.com/JugurthaMoad/e_store"}
           tech={"JS"}
+          st={"CSS"}
         />
         <Work
-          title="E-Store web application with ReactJS"
+          title="Other projects"
           description={
-            "Building a responsive E-Sotre web application with the use of : JavaScript, ReactJs, Taillwinds"
+            "Building other projects that are available in my github with the use of : JavaScript, ReactJs, Css3"
           }
           link={"https://github.com/JugurthaMoad/e_store"}
           tech={"JS"}
+          st={"CSS"}
         />
       </div>
     </div>
