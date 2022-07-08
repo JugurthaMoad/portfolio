@@ -34,7 +34,7 @@ const About = () => {
   return (
     <div id="about" className="about_container">
       <span className="about_title">
-        <h2 className="about_t_d">About Me</h2>
+        <h2 className="about_t_d">Me :</h2>
         <div className="about_hr"></div>
       </span>
       <div className="about_description">
@@ -45,7 +45,7 @@ const About = () => {
           computer science.
           <div className="about_skills_container">
             <span className="about_skills">
-              <h2 className="about_t_d_s">My Skills</h2>
+              <h2 className="about_t_d">Skills :</h2>
               <div className="about_hr"></div>
             </span>
             <div className="stack">
@@ -73,7 +73,7 @@ const About = () => {
               </div>
               <div className="stack_content">
                 <div className={front ? "stack_description" : "hide"}>
-                  Currently, I'm using:
+                  <h3 className="stack_title">Currently, I'm using:</h3>
                   <ul>
                     <li>HTML5</li>
                     <li>CSS3</li>
@@ -84,13 +84,13 @@ const About = () => {
                   </ul>
                 </div>
                 <div className={api ? "stack_description" : "hide"}>
-                  Currently, I'm using:
+                  <h3 className="stack_title">Currently, I'm using:</h3>
                   <ul>
                     <li>A REST API with the help of axios</li>
                   </ul>
                 </div>
                 <div className={back ? "stack_description" : "hide"}>
-                  Currently, I'm using:
+                  <h3 className="stack_title">Currently, I'm using:</h3>
                   <ul>
                     <li>NodeJs</li>
                     <li>ExpressJs</li>
@@ -98,7 +98,7 @@ const About = () => {
                   </ul>
                 </div>
                 <div className={others ? "stack_description" : "hide"}>
-                  I'm also usign:
+                  <h3 className="stack_title">Currently, I'm using:</h3>
                   <ul>
                     <li>Git/Github</li>
                     <li>Linux</li>

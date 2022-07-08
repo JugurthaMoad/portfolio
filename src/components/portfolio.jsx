@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense, lazy } from "react";
 import { Up } from "./icons";
 import Nav from "./nav";
 import Description from "./descripton";
-import About from "./about";
-import Contact from "./contact";
-import Works from "./works";
-import Footer from "./footer";
+
 const Portfolio = () => {
   const [display, setDisplay] = useState(false);
   const hundleClick = () => {
@@ -13,24 +10,36 @@ const Portfolio = () => {
   };
   useEffect(() => {
     window.onscroll = () => {
-      if (window.scrollY >= 70) {
+      console.log("scrol = ", window.scrollY);
+      if (window.scrollY > 100) {
         setDisplay(true);
       } else {
         setDisplay(false);
       }
     };
   });
+
+  const About = lazy(() => import("./about"));
+  const Works = lazy(() => import("./works"));
+  const Contact = lazy(() => import("./contact"));
+  const Footer = lazy(() => import("./footer"));
   return (
     <div className="global_container">
-      <Nav />
-
-      <Description />
-      <About />
-      <Works />
-      <Contact />
-
       <Up onClick={hundleClick} className={display ? "up" : "hide"} />
-      <Footer />
+      <Nav />
+      <Description />
+      <Suspense fallback={<div />}>
+        <About />
+      </Suspense>
+      <Suspense fallback={<div />}>
+        <Works />
+      </Suspense>
+      <Suspense fallback={<div />}>
+        <Contact />
+      </Suspense>
+      <Suspense fallback={<div />}>
+        <Footer />
+      </Suspense>
     </div>
   );
 };

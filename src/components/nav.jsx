@@ -1,12 +1,11 @@
-import React, { useRef, useState, useEffect } from "react";
-import { Logo, Menu, Close } from "./icons";
+import React, { useRef, useState } from "react";
+import { Menu, Close } from "./icons";
 import { saveAs } from "file-saver";
-import pdf from "../../src/Document/MoadJugurtha.pdf";
+import pdf from "../../src/Document/jugurthaMoad.pdf";
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);
   const hundlePdfClick = () => {
-    console.log("show pdf");
     saveAs(pdf, "JugurthaMoad.pdf");
   };
   const displayMenu = () => {
@@ -14,24 +13,13 @@ const Nav = () => {
   };
   const handleClickOutside = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
-      console.log("out ");
       displayMenu();
     }
   };
-  useEffect(() => {
-    if (showMenu) {
-      console.log("menu");
-      document.addEventListener("mousedown", handleClickOutside);
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
-    }
-  }, [showMenu]);
   return (
     <nav className="nav_container">
-      <div className="logo">
-        <Logo className="logo" color="#64ffda" />
-      </div>
+      <img src="./fc.png" alt="logo" className="logo" />
+
       <div className="nav_content">
         <ul>
           <li onClick={displayMenu}>
@@ -51,11 +39,11 @@ const Nav = () => {
       </div>
       <div className="nav_content_mobile">
         <Menu onClick={displayMenu} />
-        <div ref={menuRef} className={showMenu ? "menu_content" : "hide"}>
+        <div className={showMenu ? "menu_content" : "hide"}>
           <div>
             <Close className="close_btn" onClick={displayMenu} />
           </div>
-          <div className="menu_sub">
+          <div ref={menuRef} className="menu_sub">
             <ul>
               <li onClick={displayMenu}>
                 <a href="#about">About</a>
@@ -73,7 +61,10 @@ const Nav = () => {
             </div>
           </div>
         </div>
-        <div className={showMenu ? "menu_bg" : "hide"}></div>
+        <div
+          onClick={handleClickOutside}
+          className={showMenu ? "menu_bg" : "hide"}
+        ></div>
       </div>
     </nav>
   );

@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { Phone, Mail, Location } from "./icons";
 const Contact = () => {
   return (
     <div id="contact" className="contact_container">
       <span className="contact_content">
-        <h2 className=".about_t_d">Contact Me</h2>
+        <h2 className=".about_t_d">Contact: </h2>
         <div className="about_hr"></div>
       </span>
       <div className="contact_text">

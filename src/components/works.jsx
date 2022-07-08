@@ -4,7 +4,7 @@ const Works = () => {
   return (
     <div id="works" className="works_container">
       <span className="about_title">
-        <h2 className="work_t">My Works</h2>
+        <h2 className="work_t">Works</h2>
         <div className="about_hr"></div>
       </span>
       <div className="works_info">
