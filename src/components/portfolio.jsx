@@ -8,16 +8,14 @@ const Portfolio = () => {
   const hundleClick = () => {
     window.scrollTo(0, 0);
   };
-  useEffect(() => {
-    window.onscroll = () => {
-      console.log("scrol = ", window.scrollY);
-      if (window.scrollY > 100) {
-        setDisplay(true);
-      } else {
-        setDisplay(false);
-      }
-    };
-  });
+
+  const handleScroll = () => {
+    if (window.scrollY > 90) {
+      setDisplay(true);
+    } else {
+      setDisplay(false);
+    }
+  };
 
   const About = lazy(() => import("./about"));
   const Works = lazy(() => import("./works"));
@@ -25,7 +23,6 @@ const Portfolio = () => {
   const Footer = lazy(() => import("./footer"));
   return (
     <div className="global_container">
-      <Up onClick={hundleClick} className={display ? "up" : "hide"} />
       <Nav />
       <Description />
       <Suspense fallback={<div />}>

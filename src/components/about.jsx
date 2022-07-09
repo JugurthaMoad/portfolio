@@ -39,10 +39,13 @@ const About = () => {
       </span>
       <div className="about_description">
         <div className="about_description_text">
-          Hello! My name is Jugurtha Moad. I enjoy creating things that live on
-          the internet. My interest in web development started when I discovered
-          React Js. I also love creating algorithms to solve problems related to
-          computer science.
+          Hello! My name is Jugurtha Moad. I am passionate about web development
+          especially Front-End web development, I enjoy creating things that
+          live on the internet. I am always learning new techniques and
+          technologies that will allow me to write clean, reusable code and
+          improve performance. My interest in web development started when I
+          discovered React Js. <br />I really enjoy reading books " Personal
+          Development, investment ..." and play some nice guitar tunes.
           <div className="about_skills_container">
             <span className="about_skills">
               <h2 className="about_t_d">Skills :</h2>
@@ -77,10 +80,15 @@ const About = () => {
                   <ul>
                     <li>HTML5</li>
                     <li>CSS3</li>
-                    <li>JavaScript (ES6+)</li>
+                    <li>
+                      JavaScript (functional programming, Object-Oriented
+                      Programming)
+                    </li>
                     <li>TypeScript</li>
                     <li>ReactJs</li>
+                    <li>Svelte</li>
                     <li>Tailwindcss</li>
+                    <li>WebPack</li>
                   </ul>
                 </div>
                 <div className={api ? "stack_description" : "hide"}>

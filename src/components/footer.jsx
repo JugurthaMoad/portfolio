@@ -13,7 +13,7 @@ const Footer = () => {
             <GitI />
           </a>
           <a
-            href="https://github.com/JugurthaMoad"
+            href="https://www.linkedin.com/in/jugurtha-moad-951abb242/"
             target="_blank"
             rel="noreferrer"
           >

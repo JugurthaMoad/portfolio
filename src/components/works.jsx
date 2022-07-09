@@ -31,7 +31,7 @@ const Works = () => {
           description={
             "Building a responsive Portfolio with the use of : JavaScript, ReactJs, Css3"
           }
-          link={"https://github.com/JugurthaMoad/e_store"}
+          link={"https://github.com/JugurthaMoad/portfolio"}
           tech={"JS"}
           st={"CSS"}
         />
@@ -40,7 +40,7 @@ const Works = () => {
           description={
             "Building other projects that are available in my github with the use of : JavaScript, ReactJs, Css3"
           }
-          link={"https://github.com/JugurthaMoad/e_store"}
+          link={"https://github.com/JugurthaMoad?tab=repositories"}
           tech={"JS"}
           st={"CSS"}
         />

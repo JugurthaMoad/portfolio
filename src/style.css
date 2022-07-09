@@ -158,6 +158,18 @@
   justify-content: center;
   align-items: center;
 }
+.techno {
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.techno span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .description_content {
   width: 100%;
   display: flex;
@@ -278,6 +290,7 @@
 .about_description img {
   width: 80%;
   height: 100%;
+  margin: auto;
   border-radius: 50px;
 }
 .about_skills {
@@ -469,8 +482,9 @@
 .footer_content {
   text-align: center;
   padding: 20px 5px;
-  font-size: 0.7rem;
+  font-size: 1rem;
   width: 80%;
+  color: #8892b0;
 }
 
 /* footer */
@@ -481,6 +495,7 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 5px;
+  color: #8892b0 !important;
 }
 
 /* Works component */
